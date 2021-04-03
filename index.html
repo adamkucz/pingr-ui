@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pingr style options</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Federo&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Julius+Sans+One&family=Jura:wght@300;400;500;600;700&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat+Subrayada:wght@700&family=NTR&family=Numans&family=Orbitron:wght@400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Pattaya&family=Paytone+One&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300;400;500;600;700;800;900&family=Reem+Kufi&family=Spartan:wght@200;300;400;500;600;700;800;900&family=Text+Me+One&family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300;400;500;600;700&family=Fredericka+the+Great&family=Fredoka+One&family=Fugaz+One&family=Libre+Barcode+39&family=Lobster&family=Oi&family=Rowdies:wght@400;700&family=Seaweed+Script&family=Spicy+Rice&family=Staatliches&family=Vibes&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Kavivanar&family=Nerko+One&family=Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navigation-bar">
+        <div id="navigation-container">
+    
+          <!-- <a href="./index.html"><img id="logo" src="./images/option1.jpg"></a> -->
+          <span id="pingr">Pingr</span>
+
+
+          <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#" id="log-in">Log in</a></li>
+              <li><a href="#" id="sign-up">Sign up</a></li>
+          </ul>
+        </div>
+
+     
+        <div class="main-container">
+            <div class="container1">
+
+                <h2>Logo</h2>
+                <select id="select-logo" onchange="changeLogo()">
+                    <option value="1" selected>Logo 1</option>
+                    <option value="2">Logo 2</option>
+                    <option value="3">Logo 3</option>
+                    <option value="4">Logo 4</option>
+                    <option value="5">Logo 5</option>
+                    <option value="6">Logo 6</option>
+                    <option value="7">Logo 7</option>
+                    <option value="8">Logo 8</option>
+                    <option value="9">Logo 9</option>
+                    <option value="10">Logo 10</option>
+                </select>
+
+                <button onclick="flipImage()">Flip Image</button>
+
+                <h2>Font</h2>
+                <select id="select-font" onchange="changeFont()">
+                    <optgroup label="Sans Serif">
+                        <option value=0 selected>Lato sans-serif</option>
+                        <option value=1>Josefin Sans sans-serif</option>
+                        <option value=2>Jura sans-serif</option>
+                        <option value=3>Kodchasan sans-serif</option>
+                        <option value=4>NTR sans-serif</option>
+                        <option value=5>Orbitron sans-serif</option>
+                        <option value=6>Paytone One sans-serif</option>
+                        <option value=7>Raleway sans-serif</option>
+                        <option value=8>Recursive sans-serif</option>
+                        <option value=9>Reem Kufi sans-serif</option>
+                        <option value=10>Spartan sans-serif</option>
+                        <option value=11>Varela Round sans-serif</option>
+                    </optgroup>
+
+                    <optgroup label="Display">
+                        <option value=12>Audiowide, cursive</option>
+                        <option value=13>Comfortaa, cursive</option>
+                        <option value=14>Fredoka One, cursive</option>
+                        <option value=15>Fugaz One, cursive</option>
+                        <option value=16>Lobster, cursive</option>
+                        <option value=17>Seaweed Script, cursive</option>
+                        <option value=18>Staatliches, cursive</option>
+                    </optgroup>
+
+                    <optgroup label="Handwriting">
+                        <option value=19>Grand Hotel, cursive</option>
+                        <option value=20>Kavivanar, cursive</option>
+                        <option value=21>Nerko One, cursive</option>
+                        <option value=22>Sofia, cursive</option>
+                    </optgroup>
+                    
+                </select>
+
+                <button onclick="italicize()"><em>Italicize</em></button>
+                <button onclick="bold()">Bold</button>
+                <button onclick="capitalize()">Capitalize</button>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="./js/script.js"></script>   
+</body>
+</html>

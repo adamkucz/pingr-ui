@@ -1,0 +1,143 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;1,700&display=swap');
+
+
+
+/* Variables */
+:root {
+    /* --background: #f5f0df; */
+    --background: white;
+    --lightblack: #3a3a3c;
+    --darkblack: #242424;
+
+    /* Font Variables */
+    --lobstertwo: 'Lobster Two', cursive;
+}
+
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 70px;
+}
+
+#navigation-container {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 50px; 
+}
+
+.navigation-bar {
+    background-color: inherit;
+    height: 70px;
+    width: 100%;
+    text-align: right;
+}
+
+.navigation-bar img {
+    float: left;
+    padding-right: 15px;
+}
+
+.navigation-bar span {
+    font-size: 45px;
+    float: left;
+    line-height: 65px;
+    color: var(--lightblack);
+    /* font-family: var(--lobstertwo); */
+    /* font-style: italic; */
+}
+
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: var(--lightblack);
+    font-size: 18px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    margin: 0 10px;
+}
+
+/* Buttons */
+
+#sign-up {
+    background-color: var(--lightblack);
+    color: var(--background);
+    border: 2px solid var(--lightblack);
+    border-radius: 7px;
+}
+
+#sign-up:hover{
+    background-color: transparent;
+    color: var(--lightblack);
+    transition: .25s;
+}
+
+#log-in {
+    background-color: transparent;
+    color: var(--lightblack);
+    border: 2px solid var(--lightblack);
+    border-radius: 7px;
+}
+
+#log-in:hover {
+    background-color: var(--lightblack);
+    color: var(--background)
+}
+
+.navigation-bar li a:hover {
+    color: black;
+    transition: .25s;
+}
+
+
+/* Main Container */
+
+.container1 {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.container1 select {
+    display: block;
+    margin: 15px 0;
+}
+
+.container1 button {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.container1 button:hover {
+    cursor: pointer;
+}
