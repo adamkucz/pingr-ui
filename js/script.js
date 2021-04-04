@@ -2,17 +2,24 @@
 
 function changeLogo(){
     try {
+        // Remove previous logo
         var logo = document.getElementById("logo");
         logo.parentNode.removeChild(logo);
+
+        // Remove previous favicon
+        var favicon = document.getElementById("favicon");
+        favicon.parentNode.removeChild(favicon);
         
     } catch (error) {
         //do nothing
     } finally {
+
         var val = document.getElementById("select-logo").value;
+        
+        // Create logo node
         var image = document.createElement('img');
-        image.src = "./images/logo" + val + ".jpg";
+        image.src = "./images/logo" + val + ".png";
         image.id = "logo";
-        console.log(val);
         
         if(val == "6"){
            image.style.position = "relative";
@@ -23,6 +30,15 @@ function changeLogo(){
         }
 
         document.getElementById("navigation-container").prepend(image);
+
+        // Create favicon node
+        var favicon = document.createElement("link");
+        favicon.id = "favicon";
+        favicon.rel = "shortcut icon";
+        favicon.type = "image/jpg";
+        favicon.href = "./images/logo" + val + ".png";
+        
+        document.getElementsByTagName("head")[0].prepend(favicon);
     } 
 }
 
